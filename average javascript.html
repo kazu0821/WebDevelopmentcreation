@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<title>JavaScript</title>
+<script>
+function add_number() {
+var first_number = parseInt(document.getElementById("Text1").value);
+var second_number = parseInt(document.getElementById("Text2").value);
+<!--This parseInt statement is important to output answer-->
+var third_number = parseInt(document.getElementById("Text3").value);
+var forth_number = parseInt(document.getElementById("Text4").value);
+var fifth_number = parseInt(document.getElementById("Text5").value);
+var average =( first_number + second_number + third_number + forth_number + fifth_number)/5;
+document.getElementById("txtresult").value = average;
+}
+</script>
+<style><!--CSS text sentence-->
+body {font-family: 'Open Sans Condensed', sans-serif;}
+.wrapper {width:150px;height:100px;margin-left:auto;margin-right:auto;margin-top:100px;}
+input {background-color:gold; color:black;}
+.btncolor {background-color:black}
+</style>
+</head>
+<body>
+Enter First Number   :
+<br>
+<input type="text" id="Text1" >
+<br>
+Enter Second Number   :
+<br>
+<input type ="text" id = "Text2">
+<br>
+<br>
+<input type ="text" id = "Text3">
+<br>
+<br>
+<input type ="text" id = "Text4">
+<br>
+<br>
+<input type ="text" id = "Text5">
+<br>
+<br>Result :
+<br>
+<input type="text" id="txtresult" >
+<br>
+<input type="button" name="clickbtn" value="Display Result" onclick="add_number()">
+<!--This is function key-->
+<img src ="caluculate.jpg" width ="200" height ="200">
+</body>
+</html>

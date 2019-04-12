@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<title>JavaScript</title>
+<script>
+function add_number() {
+
+var first_number = parseInt(document.getElementById("Text1").value);
+var second_number = parseInt(document.getElementById("Text2").value);
+<!--This parseInt statement is important to output answer-->
+
+var tax = parseInt(document.getElementById("Text3").value);
+
+var result = first_number * second_number * tax;
+
+document.getElementById("txtresult").value = result;
+}
+</script>
+<style><!--CSS text sentence-->
+body {font-family: 'Open Sans Condensed', sans-serif;}
+.wrapper {width:150px;height:100px;margin-left:auto;margin-right:auto;margin-top:100px;}
+input {background-color:gold; color:black;}
+.btncolor {background-color:black}
+</style>
+
+</head>
+<body>
+Enter First Number   :
+<br>
+<input type="text" id="Text1" >
+<br>
+Enter Second Number   :
+<br>
+<input type ="text" id = "Text2">
+<br>
+Enter tax value     :
+<br>
+<input type ="text" id ="Text3">
+
+
+<br>Result :
+<br>
+<input type="text" id="txtresult" >
+<br>
+<input type="button" name="clickbtn" value="Display Result" onclick="add_number()">
+<!--This is function key-->
+
+<img src ="caluculate.jpg" width ="200" height ="200">
+
+</body>
+</html>

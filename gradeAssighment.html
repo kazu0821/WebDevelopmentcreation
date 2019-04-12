@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<script>
+	 function grade(){
+	 var score = parseInt(document.getElementById("Text1").value);
+	 if (score >90){
+		document.getElementById("result").value = ("A");	
+	 }
+	else if (score > 80 ){
+		 document.getElementById("result").value =("B");
+	 }
+	 else if (score >70){
+		document.getElementById("result").value =("C");
+	 }
+	 else if(score >60){
+		document.getElementById("result").value =("D");
+	 }
+	 else{
+		document.getElementById("result").value =("F");
+	 }	  
+ }
+</script>
+<style type = "text/css">
+	id{
+	width :1500px;
+	height : 600px;
+	
+	}
+
+
+
+</style>
+<body>
+<div style = "background-color: #13C6E6; height : 400px ;width :370px ;border-color: blue ; border-width:20px;border-style:groove;border-radius:25px">
+<h1>Grade Check</h1>
+
+What's Your grade ?
+<input type ="score" id ="Text1" style ="width:100px;height:100px;border-color: red ; border-width:5px;border-style:groove;border-radius:5px" >%<br>
+
+<center><input class ="btncolor" type ="button" name ="clickbtn" value ="Click Here" onclick="grade()" style ="width:90px;height:90px;border-color: red ; border-width:5px;border-style:groove;border-radius:5px" ></center><br>
+
+Letter Grade<input type ="text" id ="result" style ="width:100px;height:100px ;background-color: gold;border-color: red ; border-width:5px;border-style:groove;border-radius:5px" >
+</div>
+</body>
+</html>
